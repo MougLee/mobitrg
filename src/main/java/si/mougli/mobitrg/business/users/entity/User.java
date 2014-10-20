@@ -12,12 +12,15 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
+
+import org.junit.experimental.categories.Categories.ExcludeCategory;
 
 /**
  * The persistent class for the users database table.
  */
 @Entity
-@Table(name = "users")
+@Table(name = "users", uniqueConstraints = { @UniqueConstraint(columnNames = { "email" }) })
 @NamedQuery(name = User.USER_FIND_ALL, query = "SELECT u FROM User u")
 public class User implements Serializable
 {
@@ -34,7 +37,7 @@ public class User implements Serializable
 	private String contact;
 
 	private boolean deleted;
-
+	
 	private String email;
 
 	private String hash;
