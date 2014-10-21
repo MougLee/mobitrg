@@ -9,11 +9,11 @@
 		in META-INF/test-persistence.xml -->
 	<datasource jndi-name="java:jboss/datasources/MobitrgTestDS"
 		pool-name="mobitrg-test" enabled="true" use-java-context="true">
-		<connection-url>jdbc:h2:mem:mobitrg-test;DB_CLOSE_DELAY=-1</connection-url>
-		<driver>h2</driver>
+		<connection-url>jdbc:mysql://localhost:3306/mobitrg_testdb</connection-url>
+		<driver>mysql</driver>
 		<security>
-			<user-name>sa</user-name>
-			<password>sa</password>
+			<user-name>Mougli</user-name>
+			<password>Tester123</password>
 		</security>
 	</datasource>
 </datasources>
