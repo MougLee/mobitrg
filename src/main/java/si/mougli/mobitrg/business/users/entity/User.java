@@ -14,8 +14,6 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
-import org.junit.experimental.categories.Categories.ExcludeCategory;
-
 /**
  * The persistent class for the users database table.
  */
@@ -37,7 +35,7 @@ public class User implements Serializable
 	private String contact;
 
 	private boolean deleted;
-	
+
 	private String email;
 
 	private String hash;

@@ -19,6 +19,7 @@ import si.mougli.mobitrg.business.util.Resources;
 @RunWith(Arquillian.class)
 public class UserServiceTest
 {
+
 	@Inject
 	private UserService userService;
 
