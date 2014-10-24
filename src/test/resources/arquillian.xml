@@ -17,7 +17,7 @@
 		<!-- By default, arquillian will use the JBOSS_HOME environment variable. 
 			Alternatively, the configuration below can be uncommented. -->
 		<configuration>
-			<property name="jbossHome">/workspace/Mobitrg/wildfy-8.1</property>
+			<property name="jbossHome">/var/lib/jenkins/workspace/Mobitrg/wildfly-8.1</property>
 			<property name="allowConnectingToRunningServer">true</property>
 		</configuration>
 	</container>
