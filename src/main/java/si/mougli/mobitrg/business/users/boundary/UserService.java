@@ -31,8 +31,9 @@ public class UserService
 		Query query = em.createNamedQuery(User.USER_FIND_ALL);
 		return query.getResultList();
 	}
-	
-	public String sayHello() {
+
+	public String sayHello()
+	{
 		return "Hi!";
 	}
 
